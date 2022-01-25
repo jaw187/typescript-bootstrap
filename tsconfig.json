@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "allowJs": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "plugins": [],
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es2020",
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "outDir": "dist",
+    "rootDir": "src",
+    "incremental": true
+  },
+  "exclude": ["node_modules", "dist", "coverage", "jest.config.js"],
+  "include": ["src"]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "leif",
+  "version": "0.0.0",
+  "description": "experimental explorations of blockchain",
+  "engines": {
+    "node": ">=16",
+    "npm": "8.x"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "pretty-fix": "prettier --loglevel=warn --write .",
+    "lint": "prettier --loglevel=warn --check . && eslint . --ext .ts,.js",
+    "lint-fix": "npm run pretty-fix; eslint . --ext .ts,.js --fix",
+    "test": "npm run build && npm run lint && NODE_ENV=test jest --ci --no-cache",
+    "start-dev": "ts-node ./src/index.ts",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaw187/leif.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaw187/leif/issues"
+  },
+  "homepage": "https://github.com/jaw187/leif#readme",
+  "devDependencies": {
+    "@types/jest": "27.0.3",
+    "@types/lodash": "4.14.178",
+    "@types/node": "16.11.13",
+    "@typescript-eslint/eslint-plugin": "5.7.0",
+    "@typescript-eslint/parser": "5.7.0",
+    "eslint": "8.4.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-unicorn": "39.0.0",
+    "jest": "27.4.5",
+    "prettier": "2.5.1",
+    "ts-jest": "27.1.1",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.4"
+  }
+}
